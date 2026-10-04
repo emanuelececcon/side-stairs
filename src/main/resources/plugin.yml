@@ -1,0 +1,22 @@
+name: SideStairs
+version: ${project.version}
+main: io.github.emanuelececcon.sidestairs.SideStairsPlugin
+api-version: "26.3"
+description: Place stairs sideways - hold a stick in your off-hand while placing a stair
+authors:
+  - emanuelececcon
+website: https://github.com/emanuelececcon/side-stairs
+
+commands:
+  sidestairs:
+    description: Show SideStairs status, repair displays in loaded chunks or reload the config
+    usage: /sidestairs <status|repair|reload>
+    permission: sidestairs.admin
+
+permissions:
+  sidestairs.place:
+    description: Place stairs sideways while holding a trigger item in the off-hand
+    default: true
+  sidestairs.admin:
+    description: Use /sidestairs status, repair and reload
+    default: op

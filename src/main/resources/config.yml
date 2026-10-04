@@ -1,0 +1,7 @@
+# Hold one of these items in your off-hand while placing a stair (from the main hand) to place it sideways.
+trigger-items:
+  - stick
+
+# How far away sideways stairs are drawn, as a multiple of 64 blocks (vanilla display entities use 1.0).
+# The server's display tracking range (128 blocks by default in spigot.yml) is the upper limit.
+view-range: 2.0
