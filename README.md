@@ -32,7 +32,7 @@ Each sideways stair is also recorded in its chunk's data, so it survives restart
 
 Limits:
 - The collision is a full block. No vanilla block has the shape of a sideways stair.
-- A display is lit as a whole by the light in its block, and doesn't get the soft shadows of real blocks, so it can look a little flatter than the blocks around it.
+- Sideways stairs are a little darker on some faces than the blocks around them. The client shades display entities like entities, not like blocks: east and west faces at 50% instead of 60%, north and south at 74% instead of 80%, undersides at 40% instead of 50%. They also get one light level for the whole display and none of the soft shadows of real blocks. A server can't change this. The difference shows least on north and south faces.
 - Sideways stairs don't connect into corner shapes.
 - WorldEdit copy/paste is not supported: a paste brings only the barrier, without a record for the new position. A display copied along with `-e` is removed when its chunk loads, because there is no record for it.
 - Others hear a stone sound when a sideways stair is placed, because the server plays the barrier's place sound. The player placing it hears the stair.
